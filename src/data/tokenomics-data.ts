@@ -5,7 +5,7 @@ import matic from '@/assets/img/logo/matic-logo.webp'
 import gi from '@/assets/img/others/40x40 gi.png'
 import { ITokenomics } from '@/types/tokenomics-type';
 
-const tournament_data:ITokenomics[] = [
+const tokenomics_data:ITokenomics[] = [
   {
     id:2,
     token_subtitle:'Gaming Intelligence',
@@ -49,8 +49,4 @@ const tournament_data:ITokenomics[] = [
   },
 ]
 
-export default tournament_data;
-
-function parseColor(arg0: string): import("sass").SassColor {
-    throw new Error('Function not implemented.');
-}
+export default tokenomics_data;
