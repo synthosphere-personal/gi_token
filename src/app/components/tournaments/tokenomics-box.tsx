@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { ITokenomics } from "@/types/tokenomics-type";
-import { SassColor } from "sass";
 import { title } from "process";
 
 const TokennomicsBox = ({ items }: { items: ITokenomics }) => {
