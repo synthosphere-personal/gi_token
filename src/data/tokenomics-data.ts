@@ -25,7 +25,7 @@ const tokenomics_data:ITokenomics[] = [
         id:2,
         images:gi,
         dis:'pre sale',
-        percentage:'30%'
+        percentage:'25%'
       },
       {
         id:3,
@@ -44,6 +44,12 @@ const tokenomics_data:ITokenomics[] = [
         images:gi,
         dis:'marketing and token development',
         percentage:'15%'
+      },
+      {
+        id:6,
+        images:gi,
+        dis:'community rewards',
+        percentage:'5%'
       },
     ]
   },
