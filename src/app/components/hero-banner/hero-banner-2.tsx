@@ -6,8 +6,40 @@ import shape from "@/assets/img/icons/shape.svg";
 import SvgIconCom from "../common/svg-icon-anim";
 import { Line } from "rc-progress";
 import { Tooltip } from "@nextui-org/tooltip";
+import { FaClipboard, FaClipboardCheck } from "react-icons/fa";
 
 const HeroBannerTwo = () => {
+  const [copied, setCopied] = useState(false);
+  const [selected, setSelected] = useState(false);
+
+  const bscCopy = () => {
+    const textToCopy = "0x99c56F3C1346CC7C22bC7C300F3396AE6eDf69FF";
+
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+      });
+  };
+
+  const maticCopy = () => {
+    const copyToText = "0xeed271D85f35D8194CAFFa04320a7675fFf7582f";
+
+    navigator.clipboard
+      .writeText(copyToText)
+      .then(() => {
+        setSelected(true);
+        setTimeout(() => setSelected(false), 2000); // Reset after 2 seconds
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+      });
+  };
+
   return (
     <section className="banner__area banner__padding">
       <div
@@ -31,15 +63,59 @@ const HeroBannerTwo = () => {
                 <div className="row justify-content-center">
                   <div className="col-xl-10">
                     <div className="">
-                      <div className="about__buttons">
+                      {/* <div className="about__buttons">
                         <Link href="#" className="tg-btn-2">
                           Buy with BNB
                         </Link>
                         <Link href="#" className="tg-btn-2 -secondary">
                           Buy with matic
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col about__content-btns">
+                    <ul>
+                      <li>
+                        <p className="wow bounceInLeft" data-wow-delay=".4s">
+                        GI Token contract address(Bsc)
+                        </p>
+                      </li>
+                      <li>
+                        <form action="#" className="footer-newsletter-form">
+                          <input
+                            type="text"
+                            placeholder="0x99c56F3C1346CC7C22bC7C300F3396AE6eDf69FF"
+                            disabled
+                          />
+                          <button type="button" onClick={bscCopy}>
+                            {copied ? <FaClipboardCheck /> : <FaClipboard />}
+                          </button>
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col about__content-btns">
+                    <ul>
+                      <li>
+                        <p className="wow bounceInLeft" data-wow-delay=".4s">
+                        GI Token contract address(Polygon)
+                        </p>
+                      </li>
+                      <li>
+                        <form action="#" className="footer-newsletter-form">
+                        <input
+                          type="text"
+                          placeholder="0xeed271D85f35D8194CAFFa04320a7675fFf7582f"
+                          disabled
+                        />
+                        <button type="button" onClick={maticCopy}>
+                          {selected ? <FaClipboardCheck /> : <FaClipboard />}
+                        </button>
+                        </form>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 {/* <div className="row justify-content-center mt-20">
