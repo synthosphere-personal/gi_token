@@ -16,7 +16,7 @@ const TokennomicsBox = ({ items }: { items: ITokenomics }) => {
         <h4 className="title">{items.token_title}</h4>
       </div>
       <div className="tournament__box-prize">
-        <span className="sub_des">{items.token_description}<h2 className="des">1000000000(GI 100%)</h2></span>
+        <span className="sub_des">{items.token_description}<h2 className="des">10000000(GI 100%)</h2></span>
       </div>
       <ul className="tournament__box-list list-wrap">
         {items.list_items.map((l) => (
