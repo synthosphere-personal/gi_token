@@ -54,8 +54,8 @@ const TournamentArea = () => {
                   <div className="about__content-two">
                     <p>
                     <span className="step" style={{color: "#FFBE18", fontWeight: "bold", fontSize: "24px"}}>Token distribution will be done within 24 hours: 100%<br /></span>
-                    <span className="step" style={{color: "#FFBE18", fontWeight: "bold", fontSize: "24px" }}>Token distribution will be both : 50:50 <br />BSC and Polygon Network</span>
-                    <span className="step" style={{color: "#FFBE18", fontWeight: "bold", fontSize: "24px" }}>Presale Coming Soon <br />Presale Price - $0.0038</span>
+                    <span className="step" style={{color: "#FFBE18", fontWeight: "bold", fontSize: "24px" }}>Token distribution will be both : 50:50 <br />BSC and Polygon Network<br /></span>
+                    <span className="step" style={{color: "#0D6EFD", fontWeight: "bold", fontSize: "32px" }}>Presale Coming Soon <br />Presale Price - $0.0038</span>
                     </p>
                   </div>
                   {/* <div className="about__funFact-wrap">
