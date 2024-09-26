@@ -32,8 +32,8 @@ const TournamentArea = () => {
               <div className="row justify-content-center">
                   <div className="col-xl-6 col-lg-7 col-md-10">
                       <div className="section__title text-center mb-60">
-                          <TextAnimation title='private sale' />
-                          <h3 className="title">successfully ended</h3>
+                          <TextAnimation title='pre sale' />
+                          <h3 className="title">!!! starts soon !!!</h3>
                       </div>
                   </div>
               </div>
@@ -48,11 +48,12 @@ const TournamentArea = () => {
                 <div className="col justify-content-center gutter-25">
                   <div className="section__title text-start mb-30">
                     <h3 className="title">
-                      Token <br />Generation event (TGE)
+                      Token <br />Pre-Sale event
                     </h3>
                   </div>
                   <div className="about__content-two">
                     <p>
+                    <span className="step" style={{color: "#FFBE18", fontWeight: "bold", fontSize: "32px" }}> Gaming Intelligence (GI) is a next-generation utility token powering a decentralized ecosystem built for gamers and developers in the world of GameFi (Gaming Finance).</span>
                     <span className="step" style={{color: "#0D6EFD", fontWeight: "bold", fontSize: "32px" }}>Presale Coming Soon!!! <br />Presale Price - $0.0038</span>
                     </p>
                   </div>
