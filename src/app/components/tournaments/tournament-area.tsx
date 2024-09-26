@@ -53,7 +53,7 @@ const TournamentArea = () => {
                   </div>
                   <div className="about__content-two">
                     <p>
-                    <span className="step" style={{color: "#FFBE18", fontWeight: "bold", fontSize: "32px" }}> Gaming Intelligence (GI) is a next-generation utility token powering a decentralized ecosystem built for gamers and developers in the world of GameFi (Gaming Finance).</span>
+                    <span className="step" style={{color: "#FFBE18", fontWeight: "bold", fontSize: "32px" }}> Gaming Intelligence (GI) is a next-generation utility token powering a decentralized ecosystem built for gamers and developers in the world of GameFi (Gaming Finance).</span><br>
                     <span className="step" style={{color: "#0D6EFD", fontWeight: "bold", fontSize: "32px" }}>Presale Coming Soon!!! <br />Presale Price - $0.0038</span>
                     </p>
                   </div>
